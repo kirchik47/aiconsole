@@ -22,7 +22,7 @@ class UserProfile(BaseModel):
     def set_default_username(self):
         if self.username is None:
             email = self.email
-            if email and isinstance(email, EmailStr):
+            if email and isinstance(email, str):
                 self.username = email.split("@")[0]
             else:
                 self.username = DEFAULT_USERNAME

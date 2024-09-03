@@ -23,7 +23,7 @@ export default defineConfig({
   root: path.resolve(__dirname, '..', 'frontend'),
   plugins: [react()],
   server: {
-    port: 3000,
+    port: 3001,
     host: '0.0.0.0',
   },
   resolve: {

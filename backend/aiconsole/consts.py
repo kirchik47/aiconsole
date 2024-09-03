@@ -22,9 +22,9 @@ APPLICATION_NAME = "AIConsole"
 AICONSOLE_PATH = Path(__file__).parent
 
 ORIGINS: list[str] = [
-    "http://localhost:3000",
     "http://localhost:3001",
-    "http://127.0.0.1:3000",
+    "http://localhost:3001",
+    "http://127.0.0.1:3001",
     "http://127.0.0.1:3001",
 ]
 

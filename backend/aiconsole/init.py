@@ -30,7 +30,7 @@ def run_aiconsole(dev: bool):
         "--origin",
         type=str,
         help="Origin for the frontend.",
-        default="http://localhost:3000",
+        default="http://localhost:3001",
     )
 
     port = parser.parse_args().port

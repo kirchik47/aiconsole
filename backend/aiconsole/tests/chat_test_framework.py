@@ -34,7 +34,7 @@ from aiconsole_toolkit.settings.partial_settings_data import PartialSettingsData
 
 class ChatTestFramework:
     def __init__(self) -> None:
-        os.environ["CORS_ORIGIN"] = "http://localhost:3000"
+        os.environ["CORS_ORIGIN"] = "http://localhost:3001"
 
         self._chat_id: str | None = None
         self._request_id: str | None = None

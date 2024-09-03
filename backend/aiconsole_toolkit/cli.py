@@ -19,7 +19,7 @@ async def main():
     # Create the argument parser
     parser = argparse.ArgumentParser(description="AI Console")
 
-    os.environ["CORS_ORIGIN"] = "http://localhost:3000"
+    os.environ["CORS_ORIGIN"] = "http://localhost:3001"
 
     # Add any command line arguments you need
     parser.add_argument("--input", help="Who are you?")

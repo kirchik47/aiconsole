@@ -23,7 +23,7 @@ import * as path from 'path';
 export default defineConfig({
   plugins: [wasm(), react()],
   server: {
-    port: 3000,
+    port: 3001,
     host: '0.0.0.0',
   },
   resolve: {

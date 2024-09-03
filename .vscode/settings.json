@@ -1,9 +1,7 @@
 {
   "python.analysis.typeCheckingMode": "basic",
   "flake8.cwd": "${workspaceFolder}",
-  "flake8.args": [
-    "--ignore=E501, W503, E203"
-  ],
+  "flake8.args": ["--ignore=E501, W503, E203"],
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "eslint.format.enable": true,
@@ -32,21 +30,18 @@
     "black"
   ],
   "isort.importStrategy": "fromEnvironment",
-  "black-formatter.args": [
-    "--line-length",
-    "119"
-  ],
+  "black-formatter.args": ["--line-length", "119"],
   "python.analysis.exclude": [
     "./electron/python/**",
     "./electron/node_modules/**"
   ],
-  "mypy-type-checker.args": [
-    "--check-untyped-defs"
-  ],
+  "mypy-type-checker.args": ["--check-untyped-defs"],
   "mypy-type-checker.reportingScope": "workspace",
-  "python.testing.pytestArgs": [
-    "backend"
-  ],
+  "python.testing.pytestArgs": ["backend"],
   "python.testing.unittestEnabled": false,
-  "python.testing.pytestEnabled": true
+  "python.testing.pytestEnabled": true,
+  "python.analysis.extraPaths": [
+    "./.agi/venv/Lib/site-packages",
+    "./backend/venv/Lib/site-packages"
+  ]
 }

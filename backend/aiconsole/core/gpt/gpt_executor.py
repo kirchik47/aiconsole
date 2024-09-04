@@ -35,7 +35,7 @@ _log = logging.getLogger(__name__)
 
 # litellm.cache = Cache(type="local")
 litellm.disable_cache()
-litellm.set_verbose = False
+# litellm.set_verbose = False
 
 
 class GPTExecutor:
@@ -52,7 +52,7 @@ class GPTExecutor:
         )
         self.partial_response = GPTPartialResponse()
 
-    async def execute(self, request: GPTRequest) -> AsyncGenerator[litellm.ModelResponse | CLEAR_STR_TYPE, None]:
+    async def execute(self, request: GPTRequest) -> AsyncGenerator[CLEAR_STR_TYPE, None]:
         request.validate_request()
 
         request_dict = {
